@@ -1,0 +1,11 @@
+site:
+  title: Antora Docs
+content:
+  sources:
+  - url: .
+    start_path: docs
+    branches: HEAD
+
+ui:
+  bundle:
+    url: build/ui-bundle.zip

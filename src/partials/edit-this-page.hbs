@@ -1,0 +1,13 @@
+<div class="mb-3 mb-md-0 d-flex text-nowrap">
+  {{#if (and page.fileUri (not env.CI))}}
+  <a class="btn btn-sm btn-bd-light rounded-2" href="{{page.fileUri}}" title="View and edit this file on GitHub"
+    target="_blank" rel="noopener">
+    View on GitHub
+  </a>
+  {{else if (and page.editUrl (or env.FORCE_SHOW_EDIT_PAGE_LINK (not page.origin.private)))}}
+  <a class="btn btn-sm btn-bd-light rounded-2" href="{{page.editUrl}}" title="View and edit this file on GitHub"
+    target="_blank" rel="noopener">
+    View on GitHub
+  </a>
+  {{/if}}
+</div>

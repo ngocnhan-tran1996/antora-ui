@@ -1,0 +1,6 @@
+name: my-learning-path
+title: My Learning Path
+version: 1.0.x
+start_page: index.adoc
+nav:
+- modules/ROOT/nav.adoc

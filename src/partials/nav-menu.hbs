@@ -1,0 +1,29 @@
+{{#with page.navigation}}
+<div class="offcanvas-body">
+  <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
+    <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+      <li class="bd-links-group py-2">
+        {{#with @root.page.componentVersion}}
+        <a href="{{{relativize ./url}}}" class="text-decoration-none">
+          <strong class=" bd-links-heading d-flex w-100 align-items-center fw-semibold">
+            {{./title}}
+          </strong>
+        </a>
+        {{/with}}
+
+        <ul class="list-unstyled fw-normal pb-2 small">
+          {{> nav-tree navigation=this}}
+        </ul>
+      </li>
+
+      <li class="bd-links-span-all mt-1 mb-3 mx-4 border-top"></li>
+      <li class="bd-links-span-all">
+        <a href="/docs/5.3/migration/" class="bd-links-link d-inline-block rounded small">
+          Migration
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+{{/with}}

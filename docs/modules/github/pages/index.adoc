@@ -1,0 +1,4 @@
+= My Learning Path About Github
+
+. https://github.com/git-guides/[Github Guide]
+. https://github.com/github/gitignore/blob/main/Java.gitignore[Example .gitignore file]

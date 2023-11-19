@@ -1,0 +1,23 @@
+{{#if navigation.length}}
+{{#each navigation}}
+
+{{#if ./content}}
+{{#if ./url}}
+<li data-depth="{{or ../level 0}}">
+  <a href="
+      {{~#if (eq ./urlType 'internal')}}{{{relativize ./url}}}
+      {{~else}}{{{./url}}}{{~/if}}">{{{./content}}}</a>
+</li>
+{{/if}}
+{{/if}}
+
+{{#if ./items.length}}
+<ul class="list-unstyled fw-normal pb-2 small">
+  {{/if}}
+  {{> nav-tree navigation=./items level=(increment ../level)}}
+  {{#if ./items.length}}
+</ul>
+{{/if}}
+
+{{/each}}
+{{/if}}

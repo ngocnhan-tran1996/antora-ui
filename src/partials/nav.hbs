@@ -1,0 +1,6 @@
+<aside class="bd-sidebar" {{#if page.component}} data-component="{{page.component.name}}"
+  data-version="{{page.version}}" {{/if}}>
+  <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+    {{> nav-menu}}
+  </div>
+</aside>
