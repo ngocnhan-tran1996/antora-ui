@@ -1,6 +1,0 @@
-= Welcome to My Learning Path
-:description: Welcome to My Learning Path
-
-== About me
-
-Hi, I'm Nhan. I'm a Java developer, I think so. I just want improve my skill and that why I create this repository for saving website related Java, Spring, etc...

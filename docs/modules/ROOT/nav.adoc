@@ -1,7 +1,0 @@
-* xref:index.adoc[Overview]
-
-.The Learning Path
-* xref:github:index.adoc[GITHUB]
-* xref:java:index.adoc[JAVA]
-* xref:javascript:index.adoc[NODEJS]
-* xref:rabbitmq:index.adoc[RABBITMQ]

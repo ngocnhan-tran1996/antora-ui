@@ -1,9 +1,0 @@
-= My Learning Path About RabbitMQ
-:toc:
-
-== Tutorials
-https://www.rabbitmq.com/getstarted.html[RabbitMQ Tutorials]
-
-== Level Up Article
-. https://www.rabbitmq.com/confirms.html[Consumer Acknowledgements and Publisher Confirms]
-. https://www.rabbitmq.com/streams.html[Streams]
