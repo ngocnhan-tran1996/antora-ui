@@ -24,3 +24,4 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         prerelease: false
         files: build/ui-bundle.zip
+        allowUpdates: true
