@@ -11,8 +11,6 @@ function getListItem (heading, childWrapper) {
   if (level > 1) {
     childWrapper.appendChild(listItem)
     return childWrapper
-  } else {
-    childWrapper = document.createElement('ul')
   }
   return listItem
 }
