@@ -20,5 +20,5 @@ ul.checklist i.fa-check-square-o::before {
 }
 
 ul.checklist i.fa-square-o::before {
-  content: "\2713";
+  content: "\2715";
 }
