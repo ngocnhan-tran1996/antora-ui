@@ -4,8 +4,12 @@
     <img src="https://www.animesxis.com.br/wp-content/uploads/2016/12/erro-404-anime-xis.jpg" alt="Page Not Found"
       class="img-fluid img-thumbnail d-xxl-block" />
 
-    {{#with page.componentVersion}}
-    <a class="btn btn-primary mt-3" href="{{{relativize ./url}}}">Trang Chủ</a>
-    {{/with}}
+    {{#each site.components}}
+    {{#each ./versions}}
+    {{~#if (eq this @root.page.displayVersion)}}
+    <a class="btn btn-primary mt-3" href="{{{relativize ./url}}}">Về Trang Chủ</a>
+    {{/if~}}
+    {{/each}}
+    {{/each}}
   </div>
 </div>
