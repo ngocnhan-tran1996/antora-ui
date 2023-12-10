@@ -69,9 +69,8 @@
               {{#each site.components}}
               {{#each ./versions}}
               <li>
-                <a class="dropdown-item d-flex align-items-center justify-content-between
-                    {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} active{{/if~}}
-          {{~#if (eq this ../latest)}} active{{/if}}" href=" {{{relativize ./url}}}">
+                <a class="dropdown-item d-flex align-items-center justify-content-between {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} active{{/if~}}"
+                  href="{{{relativize ./url}}}">
                   {{./displayVersion}}
                   {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}}
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi"

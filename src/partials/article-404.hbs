@@ -1,8 +1,11 @@
 <div class="bd-content ps-lg-2">
   <h2>{{{or page.title 'Page Not Found'}}}</h2>
   <div class="text-center">
-    <img src="https://t3.ftcdn.net/jpg/04/48/35/42/360_F_448354204_33yPB12jtqzD31robpa85NoPctJ2thRd.jpg"
-      alt="Page Not Found" class="img-fluid img-thumbnail d-xxl-block" />
+    <img src="https://www.animesxis.com.br/wp-content/uploads/2016/12/erro-404-anime-xis.jpg" alt="Page Not Found"
+      class="img-fluid img-thumbnail d-xxl-block" />
+
+    {{#with page.componentVersion}}
     <a class="btn btn-primary mt-3" href="{{{relativize ./url}}}">Trang Chủ</a>
+    {{/with}}
   </div>
 </div>
