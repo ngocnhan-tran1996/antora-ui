@@ -1,5 +1,8 @@
 <div class="bd-content ps-lg-2">
   <h2>{{{or page.title 'Page Not Found'}}}</h2>
-  <p>The page you&#8217;re looking for does not exist. It may have been moved. You can{{#with site.homeUrl}} return to
-    the <a href="{{{this}}}">start page</a>, or{{/with}} follow one of the links in the navigation to the left.</p>
+  <div class="text-center">
+    <img src="https://t3.ftcdn.net/jpg/04/48/35/42/360_F_448354204_33yPB12jtqzD31robpa85NoPctJ2thRd.jpg"
+      alt="Page Not Found" class="img-fluid img-thumbnail d-xxl-block" />
+    <a class="btn btn-primary mt-3" href="{{{relativize ./url}}}">Trang Chủ</a>
+  </div>
 </div>
