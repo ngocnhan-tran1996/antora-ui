@@ -1,7 +1,7 @@
 <header class="navbar navbar-expand-lg bd-navbar sticky-top">
   <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
     <div class="bd-navbar-toggle">
-      <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+      <button class="navbar-toggler p-2" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
         aria-controls="bdSidebar" aria-label="Toggle docs navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor"
           viewBox="0 0 16 16">
@@ -14,7 +14,7 @@
     <a class="navbar-brand p-0 me-0 me-lg-2" href="{{{or site.url siteRootPath}}}">{{site.title}}</a>
 
     <div class="d-flex">
-      <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+      <button class="navbar-toggler d-flex d-lg-none order-3 p-2" data-bs-toggle="offcanvas"
         data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots"
           viewBox="0 0 16 16">
@@ -28,7 +28,7 @@
       aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
       <div class="offcanvas-header px-4 pb-0">
         <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">{{site.title}}</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"
+        <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"
           data-bs-target="#bdNavbar"></button>
       </div>
 
@@ -49,13 +49,13 @@
             </a>
           </li>
 
-          {{#if (or (ne 'default' page.componentVersion.displayVersion) (eq '' page.componentVersion.displayVersion))}}
+          {{#if (or (ne 'default' page.componentVersion.displayVersion) (ne null page.componentVersion.displayVersion))}}
           <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
             <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
             <hr class="d-lg-none my-2 text-white-50">
           </li>
           <li class="nav-item dropdown">
-            <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle"
+            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle"
               data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
               {{page.componentVersion.displayVersion}}
             </button>
