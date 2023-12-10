@@ -5,9 +5,7 @@
       class="img-fluid img-thumbnail d-xxl-block" />
 
     {{#each site.components}}
-    <li class="component{{#if (eq this @root.page.component)}} is-current{{/if}}">
-      <a class="title" href="{{{relativize ./url}}}">{{{./title}}}</a>
-    </li>
+    <a class="btn btn-primary mt-3" href="{{{relativize ./url}}}">{{{./title}}}</a>
     {{/each}}
 
   </div>
