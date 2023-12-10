@@ -19,6 +19,11 @@ function getListItem (heading, childWrapper) {
   'use strict'
 
   const tableOfContents = document.getElementById('TableOfContents')
+
+  if (!tableOfContents) {
+    return
+  }
+
   const levels = parseInt(tableOfContents.dataset.levels || 2, 10)
 
   const articleSelector = 'div.bd-content'
