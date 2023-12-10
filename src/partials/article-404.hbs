@@ -5,11 +5,7 @@
       class="img-fluid img-thumbnail d-xxl-block" />
 
     {{#each site.components}}
-    {{#each ./versions}}
-    {{~#if (eq this @root.page.displayVersion)}}
-    <a class="btn btn-primary mt-3" href="{{{relativize ./url}}}">Về Trang Chủ</a>
-    {{/if~}}
-    {{/each}}
+    <a class="btn btn-primary mt-3" href="{{{relativize ./url}}}">{{{this.title}}}</a>
     {{/each}}
   </div>
 </div>
