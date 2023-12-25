@@ -61,18 +61,12 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
 
-              {{#if page.component}}
-              <li>
-                <h6 class="dropdown-header">{{page.componentVersion.displayVersion}} (Latest)</h6>
-              </li>
-              {{/if}}
-
               {{#each site.components}}
               {{#each ./versions}}
               <li>
                 <a class="dropdown-item d-flex align-items-center justify-content-between {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}} active{{/if~}}"
                   href="{{{relativize ./url}}}">
-                  {{./displayVersion}}
+                  {{./displayVersion}} {{~#if (eq this ../latest)}}(Latest){{/if}}
                   {{~#if (and (eq .. @root.page.component) (eq this @root.page.componentVersion))}}
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi"
                     viewBox="0 0 16 16">
